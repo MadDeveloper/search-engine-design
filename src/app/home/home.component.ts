@@ -38,10 +38,12 @@ export class HomeComponent implements OnInit {
     }
 
     searchBlur() {
-        this.$spanLabel.animate({
-            top: '-30px',
-            fontSize: '30px'
-        })
+        if ( this.$inputSearch.val().length === 0 ) {
+            this.$spanLabel.animate({
+                top: '-30px',
+                fontSize: '30px'
+            })
+        }
     }
 
     search() {
