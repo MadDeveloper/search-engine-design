@@ -1,0 +1,42 @@
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 40px;
+    height: 100%;
+    max-width: 650px;
+    margin: auto;
+
+    div {
+        span#search-label {
+            font-size: 30px;
+            color: rgb(140, 140, 140);
+            position: relative;
+            top: -30px;
+        }
+
+        input#search-input {
+            border: none;
+            font-size: 30px;
+            background-color: transparent;
+            width: 100%;
+        }
+    }
+
+    button#search-button {
+        border: none;
+        padding: 12px 28px;
+        position: relative;
+        top: -15px;
+        font-size: 20px;
+        background-color: #22A7F0;
+        border-radius: 40px;
+        color: white;
+        transition-property: all;
+        transition-duration: 300ms;
+
+        &:hover {
+            background-color: #446CB3;
+        }
+    }
+}
