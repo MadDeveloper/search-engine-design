@@ -24,19 +24,20 @@
     }
 
     button#search-button {
-        border: none;
+        border: 1px solid #22A7F0;
         padding: 12px 28px;
         position: relative;
         top: -15px;
         font-size: 20px;
-        background-color: #22A7F0;
+        background-color: transparent;
         border-radius: 40px;
-        color: white;
+        color: #22A7F0;
         transition-property: all;
         transition-duration: 300ms;
 
         &:hover {
-            background-color: #446CB3;
+            background-color: #22A7F0;
+            color: white;
         }
     }
 }
