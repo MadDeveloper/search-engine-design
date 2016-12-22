@@ -21,14 +21,14 @@ export class HomeComponent implements OnInit {
                 border: 'none',
                 width: '100%',
                 backgroundColor: 'transparent',
-                fontSize: '30px'
+                fontSize: '25px'
             })
             .focus()
     }
 
     searchFocus() {
         this.$spanLabel.animate({
-            top: '-60px',
+            top: '-25px',
             fontSize: '20px'
         })
 
@@ -40,8 +40,8 @@ export class HomeComponent implements OnInit {
     searchBlur() {
         if ( this.$inputSearch.val().length === 0 ) {
             this.$spanLabel.animate({
-                top: '-30px',
-                fontSize: '30px'
+                top: '16px',
+                fontSize: '25px'
             })
         }
     }

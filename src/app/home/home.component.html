@@ -1,7 +1,7 @@
 <section id="main">
-    <div>
+    <div id="search-container">
         <input id="search-input" type="text" (focus)="searchFocus()" (blur)="searchBlur()">
         <span id="search-label" (click)="searchFocus()">Search on Google</span>
+        <button id="search-button" (click)="search()">Search</button>
     </div>
-    <button id="search-button" (click)="search()">Search</button>
 </section>

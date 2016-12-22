@@ -8,35 +8,43 @@
     margin: auto;
 
     div {
+        position: relative;
+        background-color: white;
+        border-radius: 50px;
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid #efefef;
+
         span#search-label {
-            font-size: 30px;
+            font-size: 25px;
             color: rgb(140, 140, 140);
-            position: relative;
-            top: -30px;
+            position: absolute;
+            top: 16px;
         }
 
         input#search-input {
             border: none;
-            font-size: 30px;
+            font-size: 25px;
             background-color: transparent;
             width: 100%;
         }
-    }
 
-    button#search-button {
-        border: none;
-        padding: 12px 28px;
-        position: relative;
-        top: -15px;
-        font-size: 20px;
-        background-color: #22A7F0;
-        border-radius: 40px;
-        color: white;
-        transition-property: all;
-        transition-duration: 300ms;
+        button#search-button {
+            border: none;
+            padding: 12px 28px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 20px;
+            background-color: #22A7F0;
+            border-radius: 40px;
+            color: white;
+            transition-property: all;
+            transition-duration: 300ms;
 
-        &:hover {
-            background-color: #446CB3;
+            &:hover {
+                background-color: #446CB3;
+            }
         }
     }
 }
